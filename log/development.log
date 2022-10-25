@@ -11,7 +11,7 @@ rubocop \
   --only FactoryBot/AttributeDefinedStatically \
   --auto-correct
 
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/todos.rb:3)
+ (called from block (2 levels) in <main> at /home/moringa/Music/silver-octo-invention-master/spec/factories/todos.rb:3)
 DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
 attributes instead by wrapping the attribute value in a block:
 
@@ -25,8 +25,8 @@ rubocop \
   --only FactoryBot/AttributeDefinedStatically \
   --auto-correct
 
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/users.rb:4)
-Started POST "/users" for 127.0.0.1 at 2022-10-24 14:47:52 +0300
+ (called from block (2 levels) in <main> at /home/moringa/Music/silver-octo-invention-master/spec/factories/users.rb:4)
+Started GET "/" for 127.0.0.1 at 2022-10-25 21:21:08 +0300
   
 ActiveRecord::PendingMigrationError (
 
@@ -77,7 +77,7 @@ rubocop \
   --only FactoryBot/AttributeDefinedStatically \
   --auto-correct
 
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/todos.rb:3)
+ (called from block (2 levels) in <main> at /home/moringa/Music/silver-octo-invention-master/spec/factories/todos.rb:3)
 DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
 attributes instead by wrapping the attribute value in a block:
 
@@ -91,51 +91,51 @@ rubocop \
   --only FactoryBot/AttributeDefinedStatically \
   --auto-correct
 
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/users.rb:4)
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+ (called from block (2 levels) in <main> at /home/moringa/Music/silver-octo-invention-master/spec/factories/users.rb:4)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   ↳ bin/rails:9
-  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
   ↳ bin/rails:9
-  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
   ↳ bin/rails:9
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
 Migrating to CreateUsers (20180615165435)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   ↳ bin/rails:9
-  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
   ↳ db/migrate/20180615165435_create_users.rb:3
-  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180615165435"]]
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180615165435"]]
   ↳ bin/rails:9
-  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
   ↳ bin/rails:9
 Migrating to CreateTodos (20180615171006)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   ↳ bin/rails:9
-  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "todos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_d94154aa95"
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "todos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_d94154aa95"
 FOREIGN KEY ("user_id")
   REFERENCES "users" ("id")
 )[0m
   ↳ db/migrate/20180615171006_create_todos.rb:3
-  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_todos_on_user_id" ON "todos" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_todos_on_user_id" ON "todos" ("user_id")[0m
   ↳ db/migrate/20180615171006_create_todos.rb:3
-  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180615171006"]]
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180615171006"]]
   ↳ bin/rails:9
-  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
   ↳ bin/rails:9
 Migrating to AddRoleToUsers (20180622170150)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   ↳ bin/rails:9
-  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" ADD "role" integer DEFAULT 0 NOT NULL[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "role" integer DEFAULT 0 NOT NULL[0m
   ↳ db/migrate/20180622170150_add_role_to_users.rb:3
-  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180622170150"]]
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180622170150"]]
   ↳ bin/rails:9
-  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
   ↳ bin/rails:9
 Migrating to AddEmailIndexToUsers (20180622175133)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   ↳ bin/rails:9
-  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE  INDEX "index_users_on_email" ON "users" ("email")[0m
   ↳ db/migrate/20180622175133_add_email_index_to_users.rb:3
   [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180622175133"]]
   ↳ bin/rails:9
@@ -144,749 +144,179 @@ Migrating to AddEmailIndexToUsers (20180622175133)
 Migrating to AddResetPasswordFields (20180704144112)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   ↳ bin/rails:9
-  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" varchar DEFAULT NULL[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" varchar DEFAULT NULL[0m
   ↳ db/migrate/20180704144112_add_reset_password_fields.rb:3
-  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token_expires_at" datetime DEFAULT NULL[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token_expires_at" datetime DEFAULT NULL[0m
   ↳ db/migrate/20180704144112_add_reset_password_fields.rb:4
-  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
   ↳ db/migrate/20180704144112_add_reset_password_fields.rb:5
   [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180704144112"]]
   ↳ bin/rails:9
-  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
   ↳ bin/rails:9
-  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   ↳ bin/rails:9
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
   ↳ bin/rails:9
-  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-10-24 11:48:08.187862"], ["updated_at", "2022-10-24 11:48:08.187862"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-10-25 18:21:28.600959"], ["updated_at", "2022-10-25 18:21:28.600959"]]
   ↳ bin/rails:9
-  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
   ↳ bin/rails:9
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
-Started GET "/users" for 127.0.0.1 at 2022-10-24 14:48:19 +0300
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-10-25 21:21:47 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /usr/share/rvm/gems/ruby-2.7.4/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
-  
-ActionController::RoutingError (No route matches [GET] "/users"):
-  
-actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.2.4) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.6) lib/puma/configuration.rb:227:in `call'
-puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
-puma (3.12.6) lib/puma/server.rb:476:in `process_client'
-puma (3.12.6) lib/puma/server.rb:334:in `block in run'
-puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-title { "MyString" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/todos.rb:3)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-password { "password" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/users.rb:4)
-Started GET "/me" for 127.0.0.1 at 2022-10-24 14:49:00 +0300
-Processing by UsersController#me as */*
-  Parameters: {"username"=>"alvin", "password"=>"[FILTERED]"}
-Completed 401 Unauthorized in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/signup" for 127.0.0.1 at 2022-10-24 14:50:02 +0300
-Processing by SignupController#create as */*
-  Parameters: {"username"=>"alvin", "password"=>"[FILTERED]"}
-Completed 400 Bad Request in 26ms (Views: 1.0ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/signup" for 127.0.0.1 at 2022-10-24 14:50:18 +0300
-Processing by SignupController#create as */*
-  Parameters: {"username"=>"alvin", "password"=>"[FILTERED]"}
-Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/signin" for 127.0.0.1 at 2022-10-24 14:50:26 +0300
-Processing by SigninController#create as */*
-  Parameters: {"username"=>"alvin", "password"=>"[FILTERED]"}
-  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
-  ↳ app/controllers/signin_controller.rb:5
-Completed 404 Not Found in 27ms (Views: 0.5ms | ActiveRecord: 17.6ms)
-
-
-Started POST "/signup" for 127.0.0.1 at 2022-10-24 14:50:34 +0300
-Processing by SignupController#create as */*
-  Parameters: {"username"=>"alvin", "password"=>"[FILTERED]"}
-Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/signup" for 127.0.0.1 at 2022-10-24 14:52:44 +0300
-Processing by SignupController#create as */*
-  Parameters: {"username"=>"alvin", "password"=>"[FILTERED]"}
-Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/signup" for 127.0.0.1 at 2022-10-24 14:54:16 +0300
-Processing by SignupController#create as */*
-  Parameters: {"username"=>"alvin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
-Completed 400 Bad Request in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for ::1 at 2022-10-24 14:57:14 +0300
-Processing by Rails::WelcomeController#index as HTML
+Processing by Rails::WelcomeController#index as */*
+  Parameters: {"username"=>"zam", "password"=>"[FILTERED]", "email"=>"zam@gmail.com"}
   Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb (6.1ms)
-Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 30ms (Views: 20.7ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/me" for ::1 at 2022-10-24 14:57:19 +0300
-Processing by UsersController#me as HTML
-Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/signup" for ::1 at 2022-10-24 14:57:23 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/signup"):
-  
-actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.2.4) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.6) lib/puma/configuration.rb:227:in `call'
-puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
-puma (3.12.6) lib/puma/server.rb:476:in `process_client'
-puma (3.12.6) lib/puma/server.rb:334:in `block in run'
-puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/signin" for ::1 at 2022-10-24 14:57:29 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/signin"):
-  
-actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.2.4) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.6) lib/puma/configuration.rb:227:in `call'
-puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
-puma (3.12.6) lib/puma/server.rb:476:in `process_client'
-puma (3.12.6) lib/puma/server.rb:334:in `block in run'
-puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started POST "/admin" for 127.0.0.1 at 2022-10-24 14:58:32 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/admin"):
-  
-actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.2.4) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.6) lib/puma/configuration.rb:227:in `call'
-puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
-puma (3.12.6) lib/puma/server.rb:476:in `process_client'
-puma (3.12.6) lib/puma/server.rb:334:in `block in run'
-puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/admin" for 127.0.0.1 at 2022-10-24 14:58:41 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/admin"):
-  
-actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.2.4) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.6) lib/puma/configuration.rb:227:in `call'
-puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
-puma (3.12.6) lib/puma/server.rb:476:in `process_client'
-puma (3.12.6) lib/puma/server.rb:334:in `block in run'
-puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/users" for 127.0.0.1 at 2022-10-24 14:58:46 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/users"):
-  
-actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.2.4) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.6) lib/puma/configuration.rb:227:in `call'
-puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
-puma (3.12.6) lib/puma/server.rb:476:in `process_client'
-puma (3.12.6) lib/puma/server.rb:334:in `block in run'
-puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/me" for 127.0.0.1 at 2022-10-24 14:58:52 +0300
-Processing by UsersController#me as */*
-  Parameters: {"username"=>"alvin", "password"=>"[FILTERED]"}
-Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/todos" for 127.0.0.1 at 2022-10-24 14:59:08 +0300
-Processing by TodosController#index as */*
-  Parameters: {"username"=>"alvin", "password"=>"[FILTERED]"}
-Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/users" for 127.0.0.1 at 2022-10-24 14:59:14 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/users"):
-  
-actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.2.4) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.6) lib/puma/configuration.rb:227:in `call'
-puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
-puma (3.12.6) lib/puma/server.rb:476:in `process_client'
-puma (3.12.6) lib/puma/server.rb:334:in `block in run'
-puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started POST "/users" for 127.0.0.1 at 2022-10-24 14:59:19 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/users"):
-  
-actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.2.4) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.6) lib/puma/configuration.rb:227:in `call'
-puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
-puma (3.12.6) lib/puma/server.rb:476:in `process_client'
-puma (3.12.6) lib/puma/server.rb:334:in `block in run'
-puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started POST "/signin" for 127.0.0.1 at 2022-10-24 14:59:30 +0300
-Processing by SigninController#create as */*
-  Parameters: {"username"=>"alvin", "password"=>"[FILTERED]"}
-  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
-  ↳ app/controllers/signin_controller.rb:5
-Completed 404 Not Found in 10ms (Views: 0.3ms | ActiveRecord: 5.5ms)
-
-
-Started POST "/signup" for 127.0.0.1 at 2022-10-24 14:59:47 +0300
+Started POST "/signup" for 127.0.0.1 at 2022-10-25 21:22:41 +0300
 Processing by SignupController#create as */*
-  Parameters: {"email"=>"alvin@gmail.com", "password"=>"[FILTERED]"}
-Completed 400 Bad Request in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  Parameters: {"username"=>"zam", "password"=>"[FILTERED]", "email"=>"zam@gmail.com"}
+Completed 400 Bad Request in 30ms (Views: 0.9ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/signup" for 127.0.0.1 at 2022-10-24 14:59:53 +0300
+Started POST "/signup" for 127.0.0.1 at 2022-10-25 21:22:45 +0300
 Processing by SignupController#create as */*
-  Parameters: {"email"=>"alvin@gmail.com", "password"=>"[FILTERED]"}
-Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  Parameters: {"username"=>"zam", "password"=>"[FILTERED]", "email"=>"zam@gmail.com"}
+Completed 400 Bad Request in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/signup" for 127.0.0.1 at 2022-10-24 15:01:04 +0300
+Started POST "/signup" for 127.0.0.1 at 2022-10-25 21:23:52 +0300
 Processing by SignupController#create as */*
-  Parameters: {"email"=>"alvin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  Parameters: {"username"=>"zam", "password"=>"[FILTERED]", "email"=>"zam@gmail.com"}
+Completed 400 Bad Request in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2022-10-25 21:24:46 +0300
+Processing by SignupController#create as */*
+  Parameters: {"password"=>"[FILTERED]", "email"=>"zam@gmail.com", "password_confirmation"=>"[FILTERED]"}
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   ↳ app/controllers/signup_controller.rb:6
-  [1m[36mUser Exists (12.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "alvin@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (11.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "zam@gmail.com"], ["LIMIT", 1]]
   ↳ app/controllers/signup_controller.rb:6
-  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "alvin@gmail.com"], ["password_digest", "$2a$12$C8iVL9KOY4hG4lordJTki.ndCoTQYiBZQoIcbx1piXpR2IpUf3q6u"], ["created_at", "2022-10-24 12:01:04.941040"], ["updated_at", "2022-10-24 12:01:04.941040"]]
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "zam@gmail.com"], ["password_digest", "$2a$12$RuN2MyBZKkj2B925x6wS3.wHRopVXzh3jCq/I.mNS3Tk5ewEyL1kq"], ["created_at", "2022-10-25 18:24:47.314545"], ["updated_at", "2022-10-25 18:24:47.314545"]]
   ↳ app/controllers/signup_controller.rb:6
-  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
   ↳ app/controllers/signup_controller.rb:6
-Completed 500 Internal Server Error in 355ms (ActiveRecord: 28.2ms)
+Completed 200 OK in 485ms (Views: 0.2ms | ActiveRecord: 29.2ms)
 
 
+Started POST "/signin" for 127.0.0.1 at 2022-10-25 21:25:07 +0300
+Processing by SigninController#create as */*
+  Parameters: {"password"=>"[FILTERED]", "email"=>"zam@gmail.com", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "zam@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/signin_controller.rb:5
+Completed 200 OK in 364ms (Views: 0.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-10-25 21:25:15 +0300
+Processing by UsersController#me as */*
+  Parameters: {"password"=>"[FILTERED]", "email"=>"zam@gmail.com", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/me" for 127.0.0.1 at 2022-10-25 21:30:51 +0300
   
-Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+ActionController::RoutingError (No route matches [POST] "/me"):
   
-app/controllers/signup_controller.rb:11:in `create'
-Started POST "/signup" for 127.0.0.1 at 2022-10-24 15:02:25 +0300
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/signup" for 127.0.0.1 at 2022-10-25 21:30:58 +0300
 Processing by SignupController#create as */*
-  Parameters: {"email"=>"alvin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
-  [1m[35m (6.6ms)[0m  [1m[36mbegin transaction[0m
+  Parameters: {"password"=>"[FILTERED]", "email"=>"zam@gmail.com", "password_confirmation"=>"[FILTERED]", "role"=>"admin"}
+Unpermitted parameter: :role
+  [1m[35m (4.5ms)[0m  [1m[36mbegin transaction[0m
   ↳ app/controllers/signup_controller.rb:6
-  [1m[36mUser Exists (4.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "alvin@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (35.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "zam@gmail.com"], ["LIMIT", 1]]
   ↳ app/controllers/signup_controller.rb:6
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
   ↳ app/controllers/signup_controller.rb:6
-Completed 422 Unprocessable Entity in 345ms (Views: 0.2ms | ActiveRecord: 11.0ms)
+Completed 422 Unprocessable Entity in 397ms (Views: 0.2ms | ActiveRecord: 39.8ms)
 
 
-Started POST "/signin" for 127.0.0.1 at 2022-10-24 15:02:38 +0300
+Started POST "/signup" for 127.0.0.1 at 2022-10-25 21:31:35 +0300
+Processing by SignupController#create as */*
+  Parameters: {"password"=>"[FILTERED]", "email"=>"morty@gmail.com", "password_confirmation"=>"[FILTERED]", "role"=>"admin"}
+Unpermitted parameter: :role
+  [1m[35m (5.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/signup_controller.rb:6
+  [1m[36mUser Exists (3.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "morty@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/signup_controller.rb:6
+  [1m[36mUser Create (3.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "morty@gmail.com"], ["password_digest", "$2a$12$rCDd4jWheCkBSAoK.q.CZu0XqlPNKum6jsqorY8wkh107Ijdw7SOy"], ["created_at", "2022-10-25 18:31:35.406131"], ["updated_at", "2022-10-25 18:31:35.406131"]]
+  ↳ app/controllers/signup_controller.rb:6
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/signup_controller.rb:6
+Completed 200 OK in 389ms (Views: 0.8ms | ActiveRecord: 16.9ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2022-10-25 21:31:51 +0300
 Processing by SigninController#create as */*
-  Parameters: {"email"=>"alvin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
-  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvin@gmail.com"], ["LIMIT", 1]]
+  Parameters: {"password"=>"[FILTERED]", "email"=>"morty@gmail.com", "password_confirmation"=>"[FILTERED]", "role"=>"admin"}
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "morty@gmail.com"], ["LIMIT", 1]]
   ↳ app/controllers/signin_controller.rb:5
-Completed 500 Internal Server Error in 314ms (ActiveRecord: 0.9ms)
+Completed 200 OK in 328ms (Views: 0.1ms | ActiveRecord: 7.8ms)
 
 
-  
-Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
-  
-app/controllers/signin_controller.rb:11:in `create'
-Started POST "/me" for 127.0.0.1 at 2022-10-24 15:03:51 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/me"):
-  
-actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.2.4) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.6) lib/puma/configuration.rb:227:in `call'
-puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
-puma (3.12.6) lib/puma/server.rb:476:in `process_client'
-puma (3.12.6) lib/puma/server.rb:334:in `block in run'
-puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/me" for 127.0.0.1 at 2022-10-24 15:03:56 +0300
+Started GET "/me" for 127.0.0.1 at 2022-10-25 21:31:57 +0300
 Processing by UsersController#me as */*
-  Parameters: {"email"=>"alvin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
-Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/signin" for 127.0.0.1 at 2022-10-24 15:04:04 +0300
-Processing by SigninController#create as */*
-  Parameters: {"email"=>"alvin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
-  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvin@gmail.com"], ["LIMIT", 1]]
-  ↳ app/controllers/signin_controller.rb:5
-Completed 500 Internal Server Error in 312ms (ActiveRecord: 7.0ms)
-
-
-  
-Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
-  
-app/controllers/signin_controller.rb:11:in `create'
-Started POST "/signin" for 127.0.0.1 at 2022-10-24 15:05:37 +0300
-Processing by SigninController#create as */*
-  Parameters: {"email"=>"alvin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
-  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvin@gmail.com"], ["LIMIT", 1]]
-  ↳ app/controllers/signin_controller.rb:5
-Completed 500 Internal Server Error in 307ms (ActiveRecord: 5.6ms)
-
-
-  
-Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
-  
-app/controllers/signin_controller.rb:11:in `create'
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-title { "MyString" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/todos.rb:3)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-password { "password" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/users.rb:4)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-title { "MyString" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/todos.rb:3)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-password { "password" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/users.rb:4)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-title { "MyString" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/todos.rb:3)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-password { "password" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/users.rb:4)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-title { "MyString" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/todos.rb:3)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-password { "password" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/users.rb:4)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-title { "MyString" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/todos.rb:3)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-password { "password" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/users.rb:4)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-title { "MyString" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/todos.rb:3)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-password { "password" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/users.rb:4)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-title { "MyString" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/todos.rb:3)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-password { "password" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/users.rb:4)
-Started POST "/signin" for 127.0.0.1 at 2022-10-24 15:11:25 +0300
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /usr/share/rvm/gems/ruby-2.7.4/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
-Processing by SigninController#create as */*
-  Parameters: {"email"=>"alvin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvin@gmail.com"], ["LIMIT", 1]]
-  ↳ app/controllers/signin_controller.rb:5
-Completed 500 Internal Server Error in 316ms (ActiveRecord: 1.1ms)
-
-
-  
-Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
-  
-app/controllers/signin_controller.rb:11:in `create'
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-title { "MyString" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/todos.rb:3)
-DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
-attributes instead by wrapping the attribute value in a block:
-
-password { "password" }
-
-To automatically update from static attributes to dynamic ones,
-install rubocop-rspec and run:
-
-rubocop \
-  --require rubocop-rspec \
-  --only FactoryBot/AttributeDefinedStatically \
-  --auto-correct
-
- (called from block (2 levels) in <main> at /home/moringa/Desktop/silver-octo-invention-master/spec/factories/users.rb:4)
-Started POST "/signin" for 127.0.0.1 at 2022-10-24 15:12:51 +0300
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /usr/share/rvm/gems/ruby-2.7.4/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
-Processing by SigninController#create as */*
-  Parameters: {"email"=>"alvin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvin@gmail.com"], ["LIMIT", 1]]
-  ↳ app/controllers/signin_controller.rb:5
-Completed 500 Internal Server Error in 317ms (ActiveRecord: 1.5ms)
-
-
-  
-Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
-  
-app/controllers/signin_controller.rb:11:in `create'
-Started POST "/signin" for 127.0.0.1 at 2022-10-24 15:14:52 +0300
-Processing by SigninController#create as */*
-  Parameters: {"email"=>"alvin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
-  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvin@gmail.com"], ["LIMIT", 1]]
-  ↳ app/controllers/signin_controller.rb:5
-Completed 200 OK in 303ms (Views: 0.4ms | ActiveRecord: 6.3ms)
-
-
-Started POST "/signin" for 127.0.0.1 at 2022-10-24 15:22:21 +0300
-Processing by SigninController#create as */*
-  Parameters: {"email"=>"alvin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvin@gmail.com"], ["LIMIT", 1]]
-  ↳ app/controllers/signin_controller.rb:5
-Completed 200 OK in 317ms (Views: 0.4ms | ActiveRecord: 0.4ms)
-
-
-Started POST "/me" for 127.0.0.1 at 2022-10-24 15:22:27 +0300
-  
-ActionController::RoutingError (No route matches [POST] "/me"):
-  
-actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.2.4) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
-rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
-railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.6) lib/puma/configuration.rb:227:in `call'
-puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
-puma (3.12.6) lib/puma/server.rb:476:in `process_client'
-puma (3.12.6) lib/puma/server.rb:334:in `block in run'
-puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/me" for 127.0.0.1 at 2022-10-24 15:22:31 +0300
-Processing by UsersController#me as */*
-  Parameters: {"email"=>"alvin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
-  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Parameters: {"password"=>"[FILTERED]", "email"=>"morty@gmail.com", "password_confirmation"=>"[FILTERED]", "role"=>"admin"}
+  [1m[36mUser Load (10.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
   ↳ app/controllers/application_controller.rb:13
-Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+Completed 200 OK in 27ms (Views: 1.7ms | ActiveRecord: 10.5ms)
 
 
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+title { "MyString" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <main> at /home/moringa/Desktop/projects/authy-rails/spec/factories/todos.rb:3)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+password { "password" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <main> at /home/moringa/Desktop/projects/authy-rails/spec/factories/users.rb:4)
